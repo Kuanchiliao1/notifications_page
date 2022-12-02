@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+/* Note: dont need to deal with local fonts */
+
+body {
+  /* Is the best way to apply font to set the font family inside body? */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 1.5em;
+}
+
+/* Typography */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.notif-quantity {
+  color: white;
+  background-color: darkblue;
+  padding: .1em .5em;
+  border-radius: .5em;
+}
+
+.mark-as-read {
+  color: grey;
+  font-size: .8rem;
+}
+
+
+
+/* Layout */
+.notif-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

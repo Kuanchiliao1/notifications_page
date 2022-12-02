@@ -22,31 +22,43 @@
 - put normalize.css in AHK for easy access
 - memorize how to get rid of bullets from lists -->
 
-Plan:
-- Setup basic HTML structure
-- Add normalize css file
-- Link both css files
+<!-- Plan:
+-x Setup basic HTML structure
+-x Add normalize css file
+-x Link both css files
+- Style the notifications top section
+  - Wrap in container and use flexbox to line
+  - Add fonts from google
+
 - 
 
-<body>
-  <!-- Do you use normalize CSS? -->
+How do I use prettier on this?
+-->
 
-    <!-- Figure out why wrapping this thing in a div makes the whole thing disappear -->
-    <h1>
-      Notifications 3
-    </h1>
-    <p>
-      Mark all as read
-    </p>
+<body>
+  <!-- Do you use normalize CSS? 
+  - Use Kevin Powell resets, watch videos
+  -->
+
+    <div class="notif-top-container">
+      <h1>
+        Notifications <span class="notif-quantity">3</span>
+      </h1>
+      <p class="mark-as-read">
+        Mark all as read
+      </p>
+    </div>
   <div class="container">
     <ul>
-      <!-- Not sure if this is the best tag to use here. Also not sure how to include the profile imgs in this... -->
+      <!-- xNot sure if this is the best tag to use here. Also not sure how to include the profile imgs in this... -->
       <li>
-        <img src="assets/images/avatar-angela-gray.webp" alt="profile picture">
-        <p>
-          Mark Webber reacted to your recent post My first tournament today!
-          1m ago
-        </p>
+        <div class="notif-container">
+          <img src="assets/images/avatar-angela-gray.webp" alt="profile picture">
+          <p>
+            Mark Webber reacted to your recent post My first tournament today!
+            1m ago
+          </p>
+        </div>
       </li>
       <li>  Angela Gray followed you
   5m ago</li>
