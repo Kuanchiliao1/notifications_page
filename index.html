@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Notifications page</title>
 
@@ -14,7 +18,20 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+<!-- Extraneous tasks:
+- put normalize.css in AHK for easy access
+- memorize how to get rid of bullets from lists -->
+
+Plan:
+- Setup basic HTML structure
+- Add normalize css file
+- Link both css files
+- 
+
 <body>
+  <!-- Do you use normalize CSS? -->
+
+    <!-- Figure out why wrapping this thing in a div makes the whole thing disappear -->
     <h1>
       Notifications 3
     </h1>
@@ -23,8 +40,14 @@
     </p>
   <div class="container">
     <ul>
-      <li>Mark Webber reacted to your recent post My first tournament today!
-  1m ago</li>
+      <!-- Not sure if this is the best tag to use here. Also not sure how to include the profile imgs in this... -->
+      <li>
+        <img src="assets/images/avatar-angela-gray.webp" alt="profile picture">
+        <p>
+          Mark Webber reacted to your recent post My first tournament today!
+          1m ago
+        </p>
+      </li>
       <li>  Angela Gray followed you
   5m ago</li>
       <li>Jacob Thompson has joined your group Chess Club
