@@ -1,103 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <title>Frontend Mentor | Notifications page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<!-- Extraneous tasks:
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <!-- Extraneous tasks:
 - put normalize.css in AHK for easy access
-- memorize how to get rid of bullets from lists -->
+- memorize how to get rid of bullets from lists
+- figure out how to use figma effectively
+-->
 
-<!-- Plan:
+  <!-- Plan:
 -x Setup basic HTML structure
 -x Add normalize css file
 -x Link both css files
-- Style the notifications top section
-  - Wrap in container and use flexbox to line
-  - Add fonts from google
-
+-x Style the notifications top section
+  -x Wrap in container and use flexbox to line
+  -x Add fonts from google
+- Style first profile box
+  - Strong tags for name
+  - flexbox for container
+  - very light grey container background
+  - 
 - 
 
-How do I use prettier on this?
--->
+How to I make the circle thingy?
+Can't seem to get my image responsive
 
-<body>
-  <!-- Do you use normalize CSS? 
+  <body>
+    <!-- Do you use normalize CSS? 
   - Use Kevin Powell resets, watch videos
   -->
 
     <div class="notif-top-container">
-      <h1>
-        Notifications <span class="notif-quantity">3</span>
-      </h1>
-      <p class="mark-as-read">
-        Mark all as read
-      </p>
+      <h1>Notifications <span class="notif-quantity">3</span></h1>
+      <p class="mark-as-read">Mark all as read</p>
     </div>
-  <div class="container">
-    <ul>
-      <!-- xNot sure if this is the best tag to use here. Also not sure how to include the profile imgs in this... -->
-      <li>
-        <div class="notif-container">
-          <img src="assets/images/avatar-angela-gray.webp" alt="profile picture">
-          <p>
-            Mark Webber reacted to your recent post My first tournament today!
-            1m ago
-          </p>
-        </div>
-      </li>
-      <li>  Angela Gray followed you
-  5m ago</li>
-      <li>Jacob Thompson has joined your group Chess Club
-  1 day ago</li>
-      <li>Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.</li>
-      <li>Kimberly Smith commented on your picture
-  1 week ago</li>
-      <li>Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago</li>
-      <li>Anna Kim left the group Chess Club
-  2 weeks ago</li>
-    </ul>
-  </div>
+    <div class="container">
+      <ul>
+        <!-- xNot sure if this is the best tag to use here. Also not sure how to include the profile imgs in this... -->
+        <li>
+          <div class="notif-container">
+            <!-- How do I get these profile pics to be responsive? -->
+            <img
+              src="assets/images/avatar-mark-webber.webp"
+              alt="profile picture"
+            />
+            <p>
+              <strong>Mark Webber</strong> reacted to your recent post <span class="post">My first tournament today!</span>
+              <span class="time">1m ago</span>
+            </p>
+          </div>
+        </li>
+        <li>Angela Gray followed you 5m ago</li>
+        <li>Jacob Thompson has joined your group Chess Club 1 day ago</li>
+        <li>
+          Rizky Hasanuddin sent you a private message 5 days ago Hello, thanks
+          for setting up the Chess Club. I've been a member for a few weeks now
+          and I'm already having lots of fun and improving my game.
+        </li>
+        <li>Kimberly Smith commented on your picture 1 week ago</li>
+        <li>
+          Nathan Peterson reacted to your recent post 5 end-game strategies to
+          increase your win rate 2 weeks ago
+        </li>
+        <li>Anna Kim left the group Chess Club 2 weeks ago</li>
+      </ul>
+    </div>
 
-  
-
-  
-
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Tony Liao</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tony Liao</a>.
+    </div>
+  </body>
 </html>

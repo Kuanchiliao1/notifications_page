@@ -2,13 +2,12 @@
 /* Note: dont need to deal with local fonts */
 
 body {
-  /* Is the best way to apply font to set the font family inside body? */
+  /* Is the best way to apply font to set the font family inside body? Yes!*/
   font-family: 'Plus Jakarta Sans', sans-serif;
   margin: 1.5em;
 }
 
 /* Typography */
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -32,6 +31,18 @@ h1 {
   font-size: .8rem;
 }
 
+.time {
+  display: block;
+  font-size: 1rem;
+  color: #939CAD;
+}
+
+.post {
+  color: #5E6778;
+  font-weight: 800;
+}
+
+.group {}
 
 
 /* Layout */
@@ -39,4 +50,20 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.notif-container {
+  display: flex;
+  border-radius: 10px;
+  background-color: #f7fafd;
+}
+
+/* Images */
+img {
+  display: block;
+  max-width: 50%;
+  margin: 1em;
+}
+
+p {
 }
